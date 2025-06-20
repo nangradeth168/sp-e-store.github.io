@@ -125,8 +125,6 @@
         .fade-in-on-scroll.active {
             opacity: 1;
             transform: translateY(0);
-            /* Optional: if you want to use the keyframe specifically */
-            /* animation: fadeIn 0.8s ease-out forwards; */
         }
 
         /* Product card hover animation */
@@ -171,6 +169,7 @@
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="bg-white shadow-lg p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-3xl font-extrabold text-indigo-700 rounded-lg p-2 hover:bg-indigo-50 transition-colors">
@@ -199,6 +198,7 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white bg-opacity-95 z-[100] flex flex-col items-center justify-center space-y-8">
         <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-2 hover:bg-gray-100 transition-colors">
             <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -220,6 +220,7 @@
     </div>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="relative bg-gradient-to-br from-indigo-700 to-purple-800 text-white py-24 px-4 overflow-hidden min-h-[60vh] flex items-center justify-center">
             <div class="absolute inset-0 z-0 opacity-20">
                 <div class="absolute w-64 h-64 bg-white rounded-full -top-16 -left-16 blur-3xl"></div>
@@ -238,15 +239,17 @@
             </div>
         </section>
 
+        <!-- Products Section -->
         <section id="products" class="py-16 px-4 bg-gray-50">
             <div class="container mx-auto text-center">
                 <h2 class="text-4xl font-bold mb-12 text-gray-900" data-i18n="products.heading">ផលិតផលលក់ដាច់</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Product Card 1 -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 relative" data-product-id="1" data-product-name="កាមេរ៉ាសុវត្ថិភាព" data-original-price="89.99" data-product-price="71.99">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                             បញ្ចុះតម្លៃ20%
                         </div>
-                        <img src="112211.jpg" alt="កាមេរ៉ាសុវត្ថិភាព" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <img src="Photo/112211.jpg" alt="កាមេរ៉ាសុវត្ថិភាព" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Error';">
                         <h3 class="text-2xl font-bold mb-2 text-gray-900" data-i18n="product1.name">កាមេរ៉ាសុវត្ថិភាព</h3>
                         <p class="text-gray-600 mb-4" data-i18n="product1.description">គុណភាពរូបភាពច្បាស់ HD មើលបានគ្រប់ពេលគ្រប់ទីកន្លែង។</p>
                         <div class="flex justify-between items-center mb-4">
@@ -266,11 +269,12 @@
                         </button>
                     </div>
 
+                    <!-- Product Card 2 -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 relative" data-product-id="2" data-product-name="ម៉ាស៊ីនត្រជាក់" data-original-price="350.00" data-product-price="280.00">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                             បញ្ចុះតម្លៃ20%
                         </div>
-                        <img src="ac-maintenance-for-lasting-system-pc.jpg" alt="ម៉ាស៊ីនត្រជាក់" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <img src="Photo/ac-maintenance-for-lasting-system-pc.jpg" alt="ម៉ាស៊ីនត្រជាក់" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Error';">
                         <h3 class="text-2xl font-bold mb-2 text-gray-900" data-i18n="product2.name">ម៉ាស៊ីនត្រជាក់</h3>
                         <p class="text-gray-600 mb-4" data-i18n="product2.description">ត្រជាក់លឿន ស៊ីភ្លើងតិច ស័ក្តិសមសម្រាប់គេហដ្ឋាន។</p>
                         <div class="flex justify-between items-center mb-4">
@@ -290,11 +294,12 @@
                         </button>
                     </div>
 
+                    <!-- Product Card 3 -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 relative" data-product-id="3" data-product-name="ម៉ាស៊ីនបោកគក់" data-original-price="450.00" data-product-price="360.00">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                             បញ្ចុះតម្លៃ20%
                         </div>
-                        <img src="HEINNER-HWM-M9012DCE-Automatic-Washing-Machine-Instruction-Manual.png" alt="ម៉ាស៊ីនបោកគក់" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <img src="Photo/HEINNER-HWM-M9012DCE-Automatic-Washing-Machine-Instruction-Manual.png" alt="ម៉ាស៊ីនបោកគក់" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Error';">
                         <h3 class="text-2xl font-bold mb-2 text-gray-900" data-i18n="product3.name">ម៉ាស៊ីនបោកគក់</h3>
                         <p class="text-gray-600 mb-4" data-i18n="product3.description">មុខងារច្រើន ស៊ីភ្លើងតិច សម្អាតបានស្អាតល្អ។</p>
                         <div class="flex justify-between items-center mb-4">
@@ -314,17 +319,18 @@
                         </button>
                     </div>
 
+                    <!-- Product Card 4 -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 relative" data-product-id="4" data-product-name="កង្ហារអគ្គីសនី" data-original-price="35.00" data-product-price="28.00">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                             បញ្ចុះតម្លៃ20%
                         </div>
-                        <img src="22dd.jpg" alt="កង្ហារអគ្គីសនី" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <img src="Photo/22dd.jpg" alt="កង្ហារអគ្គីសនី" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Error';">
                         <h3 class="text-2xl font-bold mb-2 text-gray-900" data-i18n="product4.name">កង្ហារអគ្គីសនី</h3>
                         <p class="text-gray-600 mb-4" data-i18n="product4.description">ខ្យល់ត្រជាក់ខ្លាំង ប្រើប្រាស់បានយូរ ស៊ីភ្លើងតិច។</p>
                         <div class="flex justify-between items-center mb-4">
                             <div>
-                                <span class="text-gray-500 line-through mr-2">$35.00</span>
-                                <span class="text-3xl font-extrabold text-green-600">$28.00</span>
+                                <span class="text-gray-500 line-through mr-2">$25.00</span>
+                                <span class="text-3xl font-extrabold text-green-600">$18.00</span>
                             </div>
                             <span class="text-yellow-500">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> (3.5)
@@ -338,11 +344,12 @@
                         </button>
                     </div>
 
+                    <!-- Product Card 5 -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 relative" data-product-id="5" data-product-name="ឧបករណ៌បំពងសំឡេង" data-original-price="120.00" data-product-price="96.00">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                             បញ្ចុះតម្លៃ20%
                         </div>
-                        <img src="Marshall-Acton.jpg" alt="ឧបករណ៌បំពងសំឡេង" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <img src="Photo/Marshall-Acton.jpg" alt="ឧបករណ៌បំពងសំឡេង" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Error';">
                         <h3 class="text-2xl font-bold mb-2 text-gray-900" data-i18n="product5.name">ឧបករណ៌បំពងសំឡេង</h3>
                         <p class="text-gray-600 mb-4" data-i18n="product5.description">សំឡេងបុកបាសខ្លាំង ច្បាស់ល្អ អាចភ្ជាប់ Bluetooth បាន។</p>
                         <div class="flex justify-between items-center mb-4">
@@ -362,11 +369,12 @@
                         </button>
                     </div>
 
+                    <!-- Product Card 6 -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 relative" data-product-id="6" data-product-name="អំពូលភ្លើងឆ្លាតវៃ" data-original-price="15.00" data-product-price="12.00">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                             បញ្ចុះតម្លៃ20%
                         </div>
-                        <img src="wwkk11.jpg" alt="អំពូលភ្លើងឆ្លាតវៃ" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <img src="Photo/wwkk11.jpg" alt="អំពូលភ្លើងឆ្លាតវៃ" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Error';">
                         <h3 class="text-2xl font-bold mb-2 text-gray-900" data-i18n="product6.name">អំពូលភ្លើងឆ្លាតវៃ</h3>
                         <p class="text-gray-600 mb-4" data-i18n="product6.description">អាចបញ្ជាបានតាមទូរស័ព្ទ ប្តូរពណ៌បានច្រើន។</p>
                         <div class="flex justify-between items-center mb-4">
@@ -386,11 +394,12 @@
                         </button>
                     </div>
 
+                    <!-- Product Card 7 -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 relative" data-product-id="7" data-product-name="ឧបករណ៌បញ្ជាពីចម្ងាយ" data-original-price="25.00" data-product-price="20.00">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                             បញ្ចុះតម្លៃ20%
                         </div>
-                        <img src="44ffkd.jpg" alt="ឧបករណ៌បញ្ជាពីចម្ងាយ" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <img src="Photo/44ffkd.jpg" alt="ឧបករណ៌បញ្ជាពីចម្ងាយ" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Error';">
                         <h3 class="text-2xl font-bold mb-2 text-gray-900" data-i18n="product7.name">ឧបករណ៌បញ្ជាពីចម្ងាយ</h3>
                         <p class="text-gray-600 mb-4" data-i18n="product7.description">បញ្ជាឧបករណ៍អគ្គីសនីផ្សេងៗបានពីចម្ងាយ ងាយស្រួលប្រើ។</p>
                         <div class="flex justify-between items-center mb-4">
@@ -410,11 +419,12 @@
                         </button>
                     </div>
 
+                    <!-- Product Card 8 -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 relative" data-product-id="8" data-product-name="កុំព្យូទ័រ Desktop" data-original-price="799.00" data-product-price="639.20">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                             បញ្ចុះតម្លៃ20%
                         </div>
-                        <img src="PC-07.jpg" alt="កុំព្យូទ័រ Desktop" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <img src="Photo/PC-07.jpg" alt="កុំព្យូទ័រ Desktop" class="w-full h-48 object-cover rounded-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Error';">
                         <h3 class="text-2xl font-bold mb-2 text-gray-900" data-i18n="product8.name">កុំព្យូទ័រ Desktop</h3>
                         <p class="text-gray-600 mb-4" data-i18n="product8.description">ដំណើរការរលូន សម្រាប់ការងារធំៗ និងលេងហ្គេម។</p>
                         <div class="flex justify-between items-center mb-4">
@@ -437,12 +447,12 @@
             </div>
         </section>
 
-        ---
-
+        <!-- Cart Section -->
         <section id="cart-section" class="py-16 px-4 bg-white">
             <div class="container mx-auto max-w-4xl">
                 <h2 class="text-4xl font-bold mb-8 text-gray-900 text-center" data-i18n="cart.heading">រទេះទំនិញរបស់អ្នក</h2>
                 <div id="cart-items-container" class="space-y-6">
+                    <!-- Cart items will be dynamically inserted here -->
                     <p id="empty-cart-message" class="text-center text-gray-600 text-lg" data-i18n="cart.emptyMessage">
                         មិនទាន់មានផលិតផលនៅក្នុងរទេះទេ។
                     </p>
@@ -459,7 +469,7 @@
                         <a href="https://web.facebook.com/spestore168" target="_blank" class="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-md transition-colors duration-300">
                             <i class="fab fa-facebook-f mr-2"></i> Facebook Page
                         </a>
-                        <a href="https://t.me/samnangkhiev" target="_blank" class="flex items-center justify-center bg-blue-600 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition-colors duration-300">
+                        <a href="https://t.me/samnangkhiev" target="_blank" class="flex items-center justify-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-md transition-colors duration-300">
                             <i class="fab fa-telegram-plane mr-2"></i> @samnangkhiev
                         </a>
                         <a href="tel:0888467829" class="flex items-center justify-center bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-full shadow-md transition-colors duration-300">
@@ -473,8 +483,7 @@
             </div>
         </section>
 
-        ---
-
+        <!-- About Us Section -->
         <section id="about" class="py-16 px-4 bg-white fade-in-on-scroll">
             <div class="container mx-auto text-center max-w-4xl">
                 <h2 class="text-4xl font-bold mb-8 text-gray-900" data-i18n="about.heading">អំពីពួកយើង</h2>
@@ -501,26 +510,25 @@
             </div>
         </section>
 
-        ---
-
+        <!-- Contact Section -->
         <section id="contact" class="py-16 px-4 bg-gray-100 fade-in-on-scroll">
             <div class="container mx-auto text-center max-w-2xl">
                 <h2 class="text-4xl font-bold mb-8 text-gray-900" data-i18n="contact.heading">ទំនាក់ទំនងមកពួកយើង</h2>
                 <p class="text-lg text-gray-700 mb-8" data-i18n="contact.description">
                     ប្រសិនបើអ្នកមានសំណួរ មតិកែលម្អ ឬចង់សាកសួរព័ត៌មានបន្ថែម សូមកុំស្ទាក់ស្ទើរក្នុងការទាក់ទងមកយើងខ្ញុំ។
                 </p>
-                <form class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                <form id="contact-form" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
                     <div class="mb-6 text-left">
                         <label for="name" class="block text-gray-700 text-sm font-bold mb-2" data-i18n="contact.nameLabel">ឈ្មោះ:</label>
-                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="ឈ្មោះពេញរបស់អ្នក" data-i18n="contact.namePlaceholder">
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="ឈ្មោះពេញរបស់អ្នក" data-i18n="contact.namePlaceholder" required>
                     </div>
                     <div class="mb-6 text-left">
                         <label for="email" class="block text-gray-700 text-sm font-bold mb-2" data-i18n="contact.emailLabel">អ៊ីមែល:</label>
-                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="អ៊ីមែលរបស់អ្នក" data-i18n="contact.emailPlaceholder">
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="អ៊ីមែលរបស់អ្នក" data-i18n="contact.emailPlaceholder" required>
                     </div>
                     <div class="mb-6 text-left">
                         <label for="message" class="block text-gray-700 text-sm font-bold mb-2" data-i18n="contact.messageLabel">សារ:</label>
-                        <textarea id="message" name="message" rows="6" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="សាររបស់អ្នក" data-i18n="contact.messagePlaceholder"></textarea>
+                        <textarea id="message" name="message" rows="6" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="សាររបស់អ្នក" data-i18n="contact.messagePlaceholder" required></textarea>
                     </div>
                     <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 duration-300 w-full sm:w-auto" data-i18n="contact.submitButton">
                         បញ្ជូនសារ
@@ -535,6 +543,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 px-4 text-center">
         <div class="container mx-auto">
             <p class="mb-4" data-i18n="footer.copyright">&copy; 2025 SP-ESTORE។ រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
@@ -542,12 +551,13 @@
                 <a href="#" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.privacyPolicy">គោលការណ៍ឯកជនភាព</a>
                 <span class="text-gray-400">|</span>
                 <a href="#" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.termsOfService">លក្ខខណ្ឌប្រើប្រាស់</a>
-                <span class="text-400">|</span>
+                <span class="text-gray-400">|</span>
                 <a href="#" class="text-gray-400 hover:text-white transition-colors" data-i18n="footer.faq">សំណួរញឹកញាប់</a>
             </div>
         </div>
     </footer>
 
+    <!-- Cart Notification Message Box -->
     <div id="cartMessageBox" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-green-500 text-white p-4 rounded-lg shadow-xl hidden transition-all duration-300 ease-in-out transform scale-95 opacity-0 z-[1000]">
         <i class="fas fa-check-circle mr-2"></i> <span data-i18n="cart.addedToCartMessage">ផលិតផលត្រូវបានបន្ថែមទៅរទេះហើយ!</span>
     </div>
@@ -556,274 +566,55 @@
         // Translations object
         const translations = {
             km: {
-                nav: {
-                    home: 'ទំព័រដើម',
-                    products: 'ផលិតផល',
-                    about: 'អំពីពួកយើង',
-                    contact: 'ទំនាក់ទំនង',
-                    cart: 'រទេះទំនិញ'
-                },
-                hero: {
-                    title: 'ស្វែងរកទំនិញដែលអ្នកស្រលាញ់',
-                    subtitle: 'យើងខ្ញុំផ្តល់ជូននូវផលិតផលដែលមានគុណភាពខ្ពស់ និងតម្លៃសមរម្យបំផុតសម្រាប់តម្រូវការប្រចាំថ្ងៃរបស់អ្នក។',
-                    button: 'មើលផលិតផលជាច្រើន'
-                },
-                products: {
-                    heading: 'ផលិតផលលក់ដាច់',
-                    addToCartButton: 'បន្ថែមចូលរទេះ',
-                    freeDelivery: 'ដឹកជញ្ជូនដោយឥគិតថ្លៃ'
-                },
-                product1: {
-                    name: 'កាមេរ៉ាសុវត្ថិភាព',
-                    description: 'គុណភាពរូបភាពច្បាស់ HD មើលបានគ្រប់ពេលគ្រប់ទីកន្លែង។'
-                },
-                product2: {
-                    name: 'ម៉ាស៊ីនត្រជាក់',
-                    description: 'ត្រជាក់លឿន ស៊ីភ្លើងតិច ស័ក្តិសមសម្រាប់គេហដ្ឋាន។'
-                },
-                product3: {
-                    name: 'ម៉ាស៊ីនបោកគក់',
-                    description: 'មុខងារច្រើន ស៊ីភ្លើងតិច សម្អាតបានស្អាតល្អ។'
-                },
-                product4: {
-                    name: 'កង្ហារអគ្គីសនី',
-                    description: 'ខ្យល់ត្រជាក់ខ្លាំង ប្រើប្រាស់បានយូរ ស៊ីភ្លើងតិច។'
-                },
-                product5: {
-                    name: 'ឧបករណ៌បំពងសំឡេង',
-                    description: 'សំឡេងបុកបាសខ្លាំង ច្បាស់ល្អ អាចភ្ជាប់ Bluetooth បាន។'
-                },
-                product6: {
-                    name: 'អំពូលភ្លើងឆ្លាតវៃ',
-                    description: 'អាចបញ្ជាបានតាមទូរស័ព្ទ ប្តូរពណ៌បានច្រើន។'
-                },
-                product7: {
-                    name: 'ឧបករណ៌បញ្ជាពីចម្ងាយ',
-                    description: 'បញ្ជាឧបករណ៍អគ្គីសនីផ្សេងៗបានពីចម្ងាយ ងាយស្រួលប្រើ។'
-                },
-                product8: {
-                    name: 'កុំព្យូទ័រ Desktop',
-                    description: 'ដំណើរការរលូន សម្រាប់ការងារធំៗ និងលេងហ្គេម។'
-                },
-                cart: {
-                    heading: 'រទេះទំនិញរបស់អ្នក',
-                    emptyMessage: 'មិនទាន់មានផលិតផលនៅក្នុងរទេះទេ។',
-                    totalPrice: 'តម្លៃសរុប:',
-                    contactOrderButton: 'ទំនាក់ទំនងកម្មង់ឥឡូវនេះ', 
-                    addedToCartMessage: 'ផលិតផលត្រូវបានបន្ថែមទៅរទេះហើយ!',
-                    removeButton: 'លុប',
-                    pricePrefix: 'តម្លៃ:'
-                },
-                about: {
-                    heading: 'អំពីពួកយើង',
-                    description: 'SP-ESTORE ត្រូវបានបង្កើតឡើងក្នុងគោលបំណងផ្តល់ជូនបទពិសោធន៍ទិញទំនិញអនឡាញដ៏ងាយស្រួល និងសុវត្ថិភាពសម្រាប់អតិថិជនទាំងអស់នៅកម្ពុជា។ យើងខ្ញុំប្តេជ្ញាផ្តល់ជូននូវផលិតផលដែលមានគុណភាពខ្ពស់ ពីម៉ាកយីហោល្បីៗ និងសេវាកម្មដឹកជញ្ជូនរហ័សទាន់ចិត្ត។ ភាពជឿជាក់របស់អតិថិជនគឺជាអាទិភាពចម្បងរបស់យើង។',
-                    feature1Title: 'តម្លៃសមរម្យ',
-                    feature1Description: 'ផ្តល់ជូនផលិតផលក្នុងតម្លៃប្រកួតប្រជែងបំផុត។',
-                    feature2Title: 'គុណភាពខ្ពស់',
-                    feature2Description: 'ផលិតផលទាំងអស់ត្រូវបានត្រួតពិនិត្យយ៉ាងម៉ត់ចត់។',
-                    feature3Title: 'ដឹកជញ្ជូនរហ័ស',
-                    feature3Description: 'សេវាកម្មដឹកជញ្ជូនលឿនទូទាំងប្រទេស។'
-                },
-                contact: {
-                    heading: 'ទំនាក់ទំនងមកពួកយើង',
-                    description: 'ប្រសិនបើអ្នកមានសំណួរ មតិកែលម្អ ឬចង់សាកសួរព័ត៌មានបន្ថែម សូមកុំស្ទាក់ស្ទើរក្នុងការទាក់ទងមកយើងខ្ញុំ។',
-                    nameLabel: 'ឈ្មោះ:',
-                    namePlaceholder: 'ឈ្មោះពេញរបស់អ្នក',
-                    emailLabel: 'អ៊ីមែល:',
-                    emailPlaceholder: 'អ៊ីមែលរបស់អ្នក',
-                    messageLabel: 'សារ:',
-                    messagePlaceholder: 'សាររបស់អ្នក',
-                    submitButton: 'បញ្ជូនសារ',
-                    phonePrefix: 'ឬទូរស័ព្ទមកយើងតាមរយៈ:',
-                    telegramPrefix: 'តេឡេក្រាម',
-                    emailPrefix: 'អ៊ីមែល:'
-                },
-                footer: {
-                    copyright: '&copy; 2025 SP-ESTORE។ រក្សាសិទ្ធិគ្រប់យ៉ាង។',
-                    privacyPolicy: 'គោលការណ៍ឯកជនភាព',
-                    termsOfService: 'លក្ខខណ្ឌប្រើប្រាស់',
-                    faq: 'សំណួរញឹកញាប់'
-                }
+                nav: { home: 'ទំព័រដើម', products: 'ផលិតផល', about: 'អំពីពួកយើង', contact: 'ទំនាក់ទំនង', cart: 'រទេះទំនិញ' },
+                hero: { title: 'ស្វែងរកទំនិញដែលអ្នកស្រលាញ់', subtitle: 'យើងខ្ញុំផ្តល់ជូននូវផលិតផលដែលមានគុណភាពខ្ពស់ និងតម្លៃសមរម្យបំផុតសម្រាប់តម្រូវការប្រចាំថ្ងៃរបស់អ្នក។', button: 'មើលផលិតផលជាច្រើន' },
+                products: { heading: 'ផលិតផលលក់ដាច់', addToCartButton: 'បន្ថែមចូលរទេះ', freeDelivery: 'ដឹកជញ្ជូនដោយឥគិតថ្លៃ' },
+                product1: { name: 'កាមេរ៉ាសុវត្ថិភាព', description: 'គុណភាពរូបភាពច្បាស់ HD មើលបានគ្រប់ពេលគ្រប់ទីកន្លែង។' },
+                product2: { name: 'ម៉ាស៊ីនត្រជាក់', description: 'ត្រជាក់លឿន ស៊ីភ្លើងតិច ស័ក្តិសមសម្រាប់គេហដ្ឋាន។' },
+                product3: { name: 'ម៉ាស៊ីនបោកគក់', description: 'មុខងារច្រើន ស៊ីភ្លើងតិច សម្អាតបានស្អាតល្អ។' },
+                product4: { name: 'កង្ហារអគ្គីសនី', description: 'ខ្យល់ត្រជាក់ខ្លាំង ប្រើប្រាស់បានយូរ ស៊ីភ្លើងតិច។' },
+                product5: { name: 'ឧបករណ៌បំពងសំឡេង', description: 'សំឡេងបុកបាសខ្លាំង ច្បាស់ល្អ អាចភ្ជាប់ Bluetooth បាន។' },
+                product6: { name: 'អំពូលភ្លើងឆ្លាតវៃ', description: 'អាចបញ្ជាបានតាមទូរស័ព្ទ ប្តូរពណ៌បានច្រើន។' },
+                product7: { name: 'ឧបករណ៌បញ្ជាពីចម្ងាយ', description: 'បញ្ជាឧបករណ៍អគ្គីសនីផ្សេងៗបានពីចម្ងាយ ងាយស្រួលប្រើ។' },
+                product8: { name: 'កុំព្យូទ័រ Desktop', description: 'ដំណើរការរលូន សម្រាប់ការងារធំៗ និងលេងហ្គេម។' },
+                cart: { heading: 'រទេះទំនិញរបស់អ្នក', emptyMessage: 'មិនទាន់មានផលិតផលនៅក្នុងរទេះទេ។', totalPrice: 'តម្លៃសរុប:', contactOrderButton: 'ទំនាក់ទំនងកម្មង់ឥឡូវនេះ', addedToCartMessage: 'ផលិតផលត្រូវបានបន្ថែមទៅរទេះហើយ!', removeButton: 'លុប', pricePrefix: 'តម្លៃ:' },
+                about: { heading: 'អំពីពួកយើង', description: 'SP-ESTORE ត្រូវបានបង្កើតឡើងក្នុងគោលបំណងផ្តល់ជូនបទពិសោធន៍ទិញទំនិញអនឡាញដ៏ងាយស្រួល និងសុវត្ថិភាពសម្រាប់អតិថិជនទាំងអស់នៅកម្ពុជា។ យើងខ្ញុំប្តេជ្ញាផ្តល់ជូននូវផលិតផលដែលមានគុណភាពខ្ពស់ ពីម៉ាកយីហោល្បីៗ និងសេវាកម្មដឹកជញ្ជូនរហ័សទាន់ចិត្ត។ ភាពជឿជាក់របស់អតិថិជនគឺជាអាទិភាពចម្បងរបស់យើង។', feature1Title: 'តម្លៃសមរម្យ', feature1Description: 'ផ្តល់ជូនផលិតផលក្នុងតម្លៃប្រកួតប្រជែងបំផុត។', feature2Title: 'គុណភាពខ្ពស់', feature2Description: 'ផលិតផលទាំងអស់ត្រូវបានត្រួតពិនិត្យយ៉ាងម៉ត់ចត់។', feature3Title: 'ដឹកជញ្ជូនរហ័ស', feature3Description: 'សេវាកម្មដឹកជញ្ជូនលឿនទូទាំងប្រទេស។' },
+                contact: { heading: 'ទំនាក់ទំនងមកពួកយើង', description: 'ប្រសិនបើអ្នកមានសំណួរ មតិកែលម្អ ឬចង់សាកសួរព័ត៌មានបន្ថែម សូមកុំស្ទាក់ស្ទើរក្នុងការទាក់ទងមកយើងខ្ញុំ។', nameLabel: 'ឈ្មោះ:', namePlaceholder: 'ឈ្មោះពេញរបស់អ្នក', emailLabel: 'អ៊ីមែល:', emailPlaceholder: 'អ៊ីមែលរបស់អ្នក', messageLabel: 'សារ:', messagePlaceholder: 'សាររបស់អ្នក', submitButton: 'បញ្ជូនសារ', phonePrefix: 'លេខទូរស័ព្ទ:', telegramPrefix: 'តេឡេក្រាម', emailPrefix: 'អ៊ីមែល:' },
+                footer: { copyright: '&copy; 2025 SP-ESTORE។ រក្សាសិទ្ធិគ្រប់យ៉ាង។', privacyPolicy: 'គោលការណ៍ឯកជនភាព', termsOfService: 'លក្ខខណ្ឌប្រើប្រាស់', faq: 'សំណួរញឹកញាប់' }
             },
             en: {
-                nav: {
-                    home: 'Home',
-                    products: 'Products',
-                    about: 'About Us',
-                    contact: 'Contact',
-                    cart: 'Cart'
-                },
-                hero: {
-                    title: 'Find Your Favorite Products',
-                    subtitle: 'We offer high-quality products at the most reasonable prices for your daily needs.',
-                    button: 'View More Products'
-                },
-                products: {
-                    heading: 'Best Selling Products',
-                    addToCartButton: 'Add to Cart',
-                    freeDelivery: 'Free Delivery'
-                },
-                product1: {
-                    name: 'Security Camera',
-                    description: 'Clear HD image quality, view anytime, anywhere.'
-                },
-                product2: {
-                    name: 'Air Conditioner',
-                    description: 'Cools fast, energy efficient, suitable for homes.'
-                },
-                product3: {
-                    name: 'Washing Machine',
-                    description: 'Multi-functional, energy-efficient, cleans thoroughly.'
-                },
-                product4: {
-                    name: 'Electric Fan',
-                    description: 'Strong airflow, durable, low power consumption.'
-                },
-                product5: {
-                    name: 'Speaker',
-                    description: 'Strong bass, clear sound, Bluetooth connectivity.'
-                },
-                product6: {
-                    name: 'Smart Light Bulb',
-                    description: 'Controllable via phone, multi-color options.'
-                },
-                product7: {
-                    name: 'Remote Control Device',
-                    description: 'Control various electrical appliances remotely, easy to use.'
-                },
-                product8: {
-                    name: 'Desktop Computer',
-                    description: 'Smooth operation for heavy tasks and gaming.'
-                },
-                cart: {
-                    heading: 'Your Shopping Cart',
-                    emptyMessage: 'No products in the cart yet.',
-                    totalPrice: 'Total Price:',
-                    contactOrderButton: 'Contact to Order Now', 
-                    addedToCartMessage: 'Product added to cart!',
-                    removeButton: 'Remove',
-                    pricePrefix: 'Price:'
-                },
-                about: {
-                    heading: 'About Us',
-                    description: 'SP-ESTORE was established with the goal of providing an easy and secure online shopping experience for all customers in Cambodia. We are committed to offering high-quality products from renowned brands and fast delivery services. Customer trust is our top priority.',
-                    feature1Title: 'Affordable Prices',
-                    feature1Description: 'Offer products at the most competitive prices.',
-                    feature2Title: 'High Quality',
-                    feature2Description: 'All products are thoroughly inspected.',
-                    feature3Title: 'Fast Delivery',
-                    feature3Description: 'Fast delivery service nationwide.'
-                },
-                contact: {
-                    heading: 'Contact Us',
-                    description: 'If you have any questions, feedback, or would like more information, please do not hesitate to contact us.',
-                    nameLabel: 'Name:',
-                    namePlaceholder: 'Your full name',
-                    emailLabel: 'Email:',
-                    emailPlaceholder: 'Your email',
-                    messageLabel: 'Message:',
-                    messagePlaceholder: 'Your message',
-                    submitButton: 'Send Message',
-                    phonePrefix: 'Or call us at:',
-                    telegramPrefix: 'Telegram',
-                    emailPrefix: 'Email:'
-                },
-                footer: {
-                    copyright: '&copy; 2025 SP-ESTORE. All rights reserved.',
-                    privacyPolicy: 'Privacy Policy',
-                    termsOfService: 'Terms of Service',
-                    faq: 'FAQ'
-                }
+                nav: { home: 'Home', products: 'Products', about: 'About Us', contact: 'Contact', cart: 'Cart' },
+                hero: { title: 'Find Your Favorite Products', subtitle: 'We offer high-quality products at the most reasonable prices for your daily needs.', button: 'View More Products' },
+                products: { heading: 'Best Selling Products', addToCartButton: 'Add to Cart', freeDelivery: 'Free Delivery' },
+                product1: { name: 'Security Camera', description: 'Clear HD image quality, view anytime, anywhere.' },
+                product2: { name: 'Air Conditioner', description: 'Cools fast, energy efficient, suitable for homes.' },
+                product3: { name: 'Washing Machine', description: 'Multi-functional, energy-efficient, cleans thoroughly.' },
+                product4: { name: 'Electric Fan', description: 'Strong airflow, durable, low power consumption.' },
+                product5: { name: 'Speaker', description: 'Strong bass, clear sound, Bluetooth connectivity.' },
+                product6: { name: 'Smart Light Bulb', description: 'Controllable via phone, multi-color options.' },
+                product7: { name: 'Remote Control Device', description: 'Control various electrical appliances remotely, easy to use.' },
+                product8: { name: 'Desktop Computer', description: 'Smooth operation for heavy tasks and gaming.' },
+                cart: { heading: 'Your Shopping Cart', emptyMessage: 'No products in the cart yet.', totalPrice: 'Total Price:', contactOrderButton: 'Contact to Order Now', addedToCartMessage: 'Product added to cart!', removeButton: 'Remove', pricePrefix: 'Price:' },
+                about: { heading: 'About Us', description: 'SP-ESTORE was established with the goal of providing an easy and secure online shopping experience for all customers in Cambodia. We are committed to offering high-quality products from renowned brands and fast delivery services. Customer trust is our top priority.', feature1Title: 'Affordable Prices', feature1Description: 'Offer products at the most competitive prices.', feature2Title: 'High Quality', feature2Description: 'All products are thoroughly inspected.', feature3Title: 'Fast Delivery', feature3Description: 'Fast delivery service nationwide.' },
+                contact: { heading: 'Contact Us', description: 'If you have any questions, feedback, or would like more information, please do not hesitate to contact us.', nameLabel: 'Name:', namePlaceholder: 'Your full name', emailLabel: 'Email:', emailPlaceholder: 'Your email', messageLabel: 'Message:', messagePlaceholder: 'Your message', submitButton: 'Send Message', phonePrefix: 'Phone number:', telegramPrefix: 'Telegram', emailPrefix: 'Email:' },
+                footer: { copyright: '&copy; 2025 SP-ESTORE. All rights reserved.', privacyPolicy: 'Privacy Policy', termsOfService: 'Terms of Service', faq: 'FAQ' }
             },
             zh: {
-                nav: {
-                    home: '首页',
-                    products: '产品',
-                    about: '关于我们',
-                    contact: '联系我们',
-                    cart: '购物车'
-                },
-                hero: {
-                    title: '寻找您喜欢的产品',
-                    subtitle: '我们为您的日常需求提供高质量、价格最合理的产品。',
-                    button: '查看更多产品'
-                },
-                products: {
-                    heading: '畅销产品',
-                    addToCartButton: '加入购物车',
-                    freeDelivery: '免费送货'
-                },
-                product1: {
-                    name: '安全摄像头',
-                    description: '高清画质，随时随地查看。'
-                },
-                product2: {
-                    name: '空调',
-                    description: '快速制冷，节能，适用于家庭。'
-                },
-                product3: {
-                    name: '洗衣机',
-                    description: '多功能，节能，清洁彻底。'
-                },
-                product4: {
-                    name: '电风扇',
-                    description: '风力强劲，经久耐用，低功耗。'
-                },
-                product5: {
-                    name: '扬声器',
-                    description: '低音强劲，音质清晰，支持蓝牙连接。'
-                },
-                product6: {
-                    name: '智能灯泡',
-                    description: '可通过手机控制，多种颜色选择。'
-                },
-                product7: {
-                    name: '遥控设备',
-                    description: '远程控制各种电器，易于使用。'
-                },
-                product8: {
-                    name: '台式电脑',
-                    description: '运行流畅，适用于大型任务和游戏。'
-                },
-                cart: {
-                    heading: '您的购物车',
-                    emptyMessage: '购物车中还没有产品。',
-                    totalPrice: '总价:',
-                    contactOrderButton: '联系立即订购', 
-                    addedToCartMessage: '产品已添加到购物车！',
-                    removeButton: '删除',
-                    pricePrefix: '价格:'
-                },
-                about: {
-                    heading: '关于我们',
-                    description: 'SP-ESTORE 的成立旨在为柬埔寨的所有客户提供便捷安全的在线购物体验。我们致力于提供来自知名品牌的高品质产品和快速的送货服务。客户信任是我们的首要任务。',
-                    feature1Title: '价格合理',
-                    feature1Description: '以最具竞争力的价格提供产品。',
-                    feature2Title: '高品质',
-                    feature2Description: '所有产品都经过严格检查。',
-                    feature3Title: '快速交货',
-                    feature3Description: '全国范围内的快速送货服务。'
-                },
-                contact: {
-                    heading: '联系我们',
-                    description: '如果您有任何问题、反馈或想了解更多信息，请随时与我们联系。',
-                    nameLabel: '姓名:',
-                    namePlaceholder: '您的全名',
-                    emailLabel: '电子邮件:',
-                    emailPlaceholder: '您的电子邮件',
-                    messageLabel: '消息:',
-                    messagePlaceholder: '您的消息',
-                    submitButton: '发送消息',
-                    phonePrefix: '或致电我们:',
-                    telegramPrefix: '飞机',
-                    emailPrefix: '电子邮件:'
-                },
-                footer: {
-                    copyright: '&copy; 2025 SP-ESTORE。保留所有权利。',
-                    privacyPolicy: '隐私政策',
-                    termsOfService: '服务条款',
-                    faq: '常见问题'
-                }
+                nav: { home: '首页', products: '产品', about: '关于我们', contact: '联系我们', cart: '购物车' },
+                hero: { title: '寻找您喜欢的产品', subtitle: '我们为您的日常需求提供高质量、价格最合理的产品。', button: '查看更多产品' },
+                products: { heading: '畅销产品', addToCartButton: '加入购物车', freeDelivery: '免费送货' },
+                product1: { name: '安全摄像头', description: '高清画质，随时随地查看。' },
+                product2: { name: '空调', description: '快速制冷，节能，适用于家庭。' },
+                product3: { name: '洗衣机', description: '多功能，节能，清洁彻底。' },
+                product4: { name: '电风扇', description: '风力强劲，经久耐用，低功耗。' },
+                product5: { name: '扬声器', description: '低音强劲，音质清晰，支持蓝牙连接。' },
+                product6: { name: '智能灯泡', description: '可通过手机控制，多种颜色选择。' },
+                product7: { name: '遥控设备', description: '远程控制各种电器，易于使用。' },
+                product8: { name: '台式电脑', description: '运行流畅，适用于大型任务和游戏。' },
+                cart: { heading: '您的购物车', emptyMessage: '购物车中还没有产品。', totalPrice: '总价:', contactOrderButton: '联系立即订购', addedToCartMessage: '产品已添加到购物车！', removeButton: '删除', pricePrefix: '价格:' },
+                about: { heading: '关于我们', description: 'SP-ESTORE 的成立旨在为柬埔寨的所有客户提供便捷安全的在线购物体验。我们致力于提供来自知名品牌的高品质产品和快速的送货服务。客户信任是我们的首要任务。', feature1Title: '价格合理', feature1Description: '以最具竞争力的价格提供产品。', feature2Title: '高品质', feature2Description: '所有产品都经过严格检查。', feature3Title: '快速交货', feature3Description: '全国范围内的快速送货服务。' },
+                contact: { heading: '联系我们', description: '如果您有任何问题、反馈或想了解更多信息，请随时与我们联系。', nameLabel: '姓名:', namePlaceholder: '您的全名', emailLabel: '电子邮件:', emailPlaceholder: '您的电子邮件', messageLabel: '消息:', messagePlaceholder: '您的消息', submitButton: '发送消息', phonePrefix: '电话号码:', telegramPrefix: '飞机', emailPrefix: '电子邮件:' },
+                footer: { copyright: '&copy; 2025 SP-ESTORE。保留所有权利。', privacyPolicy: '隐私政策', termsOfService: '服务条款', faq: '常见问题' }
             }
         };
 
@@ -832,7 +623,6 @@
         // Function to set language and update content
         function setLanguage(lang) {
             currentLang = lang;
-            // Update the lang attribute of the HTML tag
             document.documentElement.lang = lang;
 
             document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -847,7 +637,6 @@
                 }
             });
 
-            // Update product names and descriptions based on current language
             document.querySelectorAll('#products .bg-white').forEach(productCard => {
                 const productId = productCard.dataset.productId;
                 const productNameKey = `product${productId}.name`;
@@ -855,8 +644,7 @@
 
                 const productNameElement = productCard.querySelector('h3');
                 const productDescriptionElement = productCard.querySelector('p');
-                const freeDeliveryElement = productCard.querySelector('[data-i18n="products.freeDelivery"]');
-
+                const freeDeliveryElement = productCard.querySelector('.text-green-700');
 
                 if (productNameElement) {
                     productNameElement.textContent = getTranslation(productNameKey) || productNameElement.textContent;
@@ -864,19 +652,15 @@
                 if (productDescriptionElement) {
                     productDescriptionElement.textContent = getTranslation(productDescriptionKey) || productDescriptionElement.textContent;
                 }
-                if (freeDeliveryElement) {
-                    freeDeliveryElement.textContent = getTranslation('products.freeDelivery');
+                 if (freeDeliveryElement) {
+                    // Re-add the icon since innerHTML would overwrite it.
+                    freeDeliveryElement.innerHTML = `<i class="fas fa-truck mr-2"></i> ${getTranslation('products.freeDelivery')}`;
                 }
-
-                // Update data attributes for product name in case it's used by cart logic
                 productCard.dataset.productName = getTranslation(productNameKey);
             });
-
-            // Re-render cart display to reflect language change for cart item names
             updateCartDisplay();
         }
 
-        // Helper function to get translation
         function getTranslation(key) {
             const keys = key.split('.');
             let result = translations[currentLang];
@@ -884,13 +668,12 @@
                 if (result && result[keys[i]]) {
                     result = result[keys[i]];
                 } else {
-                    return null; // Key not found
+                    return null;
                 }
             }
             return result;
         }
 
-        // JavaScript for Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const closeMobileMenuButton = document.getElementById('close-mobile-menu');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -902,13 +685,14 @@
         const cartSummary = document.getElementById('cart-summary');
         const cartTotalElement = document.getElementById('cart-total');
         const langButtons = document.querySelectorAll('.lang-button');
+        const contactForm = document.getElementById('contact-form');
 
 
-        let cart = []; // Array to store cart items
+        let cart = [];
 
         function toggleMobileMenu() {
             mobileMenu.classList.toggle('hidden');
-            document.body.classList.toggle('overflow-hidden'); // Prevent scrolling when mobile menu is open
+            document.body.classList.toggle('overflow-hidden');
         }
 
         mobileMenuButton.addEventListener('click', toggleMobileMenu);
@@ -916,24 +700,25 @@
 
         // Update the cart display
         function updateCartDisplay() {
-            cartCountElement.textContent = cart.length;
-            cartItemsContainer.innerHTML = ''; // Clear current cart display
+            cartCountElement.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+            cartItemsContainer.innerHTML = '';
 
             if (cart.length === 0) {
-                emptyCartMessage.classList.remove('hidden');
+                emptyCartMessage.style.display = 'block';
                 cartSummary.classList.add('hidden');
             } else {
-                emptyCartMessage.classList.add('hidden');
+                emptyCartMessage.style.display = 'none';
                 cartSummary.classList.remove('hidden');
                 let total = 0;
 
                 cart.forEach(item => {
                     const cartItemDiv = document.createElement('div');
                     cartItemDiv.classList.add('flex', 'items-center', 'justify-between', 'bg-gray-50', 'p-4', 'rounded-lg', 'shadow-sm', 'border', 'border-gray-200');
-                    // Use item.name to generate a simple image placeholder for cart if no specific image URL is stored in cart item
+                    
+                    // MODIFIED: Use the actual image source from the cart item
                     cartItemDiv.innerHTML = `
                         <div class="flex items-center gap-4">
-                            <img src="https://placehold.co/80x60/cccccc/333333?text=${encodeURIComponent(item.name.substring(0, Math.min(item.name.length, 10)))}" alt="${item.name}" class="w-20 h-15 object-cover rounded">
+                            <img src="${item.imageSrc}" alt="${item.name}" class="w-20 h-20 object-cover rounded-md border">
                             <div>
                                 <h4 class="text-xl font-semibold text-gray-800">${item.name}</h4>
                                 <p class="text-gray-600">${getTranslation('cart.pricePrefix')} $${item.price.toFixed(2)}</p>
@@ -944,8 +729,8 @@
                                 </div>
                             </div>
                         </div>
-                        <button data-product-id="${item.id}" class="remove-from-cart-btn bg-red-500 hover:bg-red-600 text-white p-2 rounded-full text-sm transition-colors">
-                            <i class="fas fa-trash"></i> ${getTranslation('cart.removeButton')}
+                        <button data-product-id="${item.id}" class="remove-from-cart-btn bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-3 rounded-lg text-sm transition-colors flex items-center gap-1">
+                            <i class="fas fa-trash"></i> <span>${getTranslation('cart.removeButton')}</span>
                         </button>
                     `;
                     cartItemsContainer.appendChild(cartItemDiv);
@@ -960,8 +745,11 @@
             button.addEventListener('click', (event) => {
                 const productCard = event.target.closest('[data-product-id]');
                 const productId = productCard.dataset.productId;
-                const productName = productCard.dataset.productName; // Get translated name from data attribute
+                const productName = productCard.dataset.productName;
                 const productPrice = parseFloat(productCard.dataset.productPrice);
+                
+                // MODIFIED: Get the product image source
+                const productImageSrc = productCard.querySelector('img').src;
 
                 const existingItemIndex = cart.findIndex(item => item.id === productId);
 
@@ -972,60 +760,52 @@
                         id: productId,
                         name: productName,
                         price: productPrice,
+                        imageSrc: productImageSrc, // MODIFIED: Store the image source
                         quantity: 1
                     });
                 }
-
                 updateCartDisplay();
-
-                // Show message box
+                
                 cartMessageBox.classList.remove('hidden', 'opacity-0', 'scale-95');
                 cartMessageBox.classList.add('opacity-100', 'scale-100');
-
-                // Hide message box after 3 seconds
+                
                 setTimeout(() => {
                     cartMessageBox.classList.remove('opacity-100', 'scale-100');
                     cartMessageBox.classList.add('opacity-0', 'scale-95');
-                    setTimeout(() => {
-                        cartMessageBox.classList.add('hidden');
-                    }, 300); // Allow fade-out animation to complete
+                    setTimeout(() => cartMessageBox.classList.add('hidden'), 300);
                 }, 3000);
             });
         });
 
-        // Event delegation for cart item actions (remove, increase, decrease quantity)
+        // Event delegation for cart item actions
         cartItemsContainer.addEventListener('click', (event) => {
-            const target = event.target;
+            const target = event.target.closest('button');
+            if (!target) return;
+
             const productId = target.dataset.productId;
 
             if (target.classList.contains('remove-from-cart-btn')) {
                 cart = cart.filter(item => item.id !== productId);
-                updateCartDisplay();
             } else if (target.classList.contains('increase-quantity-btn')) {
                 const item = cart.find(item => item.id === productId);
-                if (item) {
-                    item.quantity++;
-                    updateCartDisplay();
-                }
+                if (item) item.quantity++;
             } else if (target.classList.contains('decrease-quantity-btn')) {
-                const item = cart.find(item => item.id === productId);
-                if (item && item.quantity > 1) {
-                    item.quantity--;
-                    updateCartDisplay();
-                } else if (item && item.quantity === 1) {
-                    // Remove item if quantity becomes 0
-                    cart = cart.filter(item => item.id !== productId);
-                    updateCartDisplay();
+                const itemIndex = cart.findIndex(item => item.id === productId);
+                if (itemIndex > -1) {
+                    if (cart[itemIndex].quantity > 1) {
+                        cart[itemIndex].quantity--;
+                    } else {
+                        cart.splice(itemIndex, 1);
+                    }
                 }
             }
+            updateCartDisplay();
         });
 
-        // Close mobile menu when clicking on a link inside it
+        // Close mobile menu when clicking a link
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                if (!mobileMenu.classList.contains('hidden')) {
-                    toggleMobileMenu();
-                }
+                if (!mobileMenu.classList.contains('hidden')) toggleMobileMenu();
             });
         });
 
@@ -1037,42 +817,54 @@
             });
         });
 
-        // Initialize cart display on page load
-        updateCartDisplay();
-        // Set initial language to Khmer on load
-        setLanguage('km');
+        // MODIFIED: Contact form submission handler
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
 
-        // Changed checkout button behavior to direct to contact options
-        document.getElementById('checkout-btn').addEventListener('click', () => {
-            // You can optionally show a message or scroll to the contact section
-            // For now, it will simply be a button that users click before choosing a contact method below it.
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const recipientEmail = 'samnangkhiev168@gmail.com';
+            const subject = `New Message from ${name} via SP-ESTORE Website`;
+
+            // Construct the email body
+            const body = `
+                Hello, You have a new message from your website contact form.
+                
+                Name: ${name}
+                Email: ${email}
+                
+                Message:
+                ${message}
+            `;
+
+            // Create the mailto link
+            const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Open the user's default email client
+            window.location.href = mailtoLink;
         });
+
+
+        // Initial setup on page load
+        updateCartDisplay();
+        setLanguage('km');
 
         // Intersection Observer for scroll animations
         const faders = document.querySelectorAll('.fade-in-on-scroll');
-
         const appearOptions = {
-            threshold: 0.1, // Element is 10% in view
-            rootMargin: "0px 0px -50px 0px" // Start animation 50px before it reaches the bottom
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
         };
-
-        const appearOnScroll = new IntersectionObserver(function(
-            entries,
-            appearOnScroll
-        ) {
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
             entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    return;
-                } else {
-                    entry.target.classList.add('active');
-                    appearOnScroll.unobserve(entry.target); // Stop observing once animated
-                }
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('active');
+                appearOnScroll.unobserve(entry.target);
             });
         }, appearOptions);
 
-        faders.forEach(fader => {
-            appearOnScroll.observe(fader);
-        });
+        faders.forEach(fader => appearOnScroll.observe(fader));
     </script>
 </body>
 </html>
